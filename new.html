@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday💖</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+      <source src="birthday.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="wrap">
+      <h1>click in the heart 💖</h1>
+      <div class="postcard1"></div>
+      <div class="postcard">
+        <div class="letter"></div>
+        <p>
+          <span>My beautiful,</span>
+          <br />
+          "Have a fantabulous Birthday khushi🥳🎂🎈.Wishing you many more candles 🎉 to blow 🎉.Have a wonderful time💖"
+          
+          <br />
+          <span class="ullu">
+            <br />
+            
+          </span>
+        </p>
+        <div class="address"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Darshan.</p>
+    </footer>
+
+    <script>
+      // Function to play audio when user interacts with the page
+      function playAudio() {
+        var audio = document.getElementById('background-audio');
+        if (audio.paused) {
+          audio.play();
+        }
+      }
+
+      // Add click and touchstart event listeners to play the audio
+      document.body.addEventListener('click', playAudio);
+      document.body.addEventListener('touchstart', playAudio);
+    </script>
+  </body>
+</html>
